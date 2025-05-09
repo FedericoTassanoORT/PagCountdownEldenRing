@@ -1,0 +1,77 @@
+/* ============================= */
+/* Reset y configuración global  */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url('fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* ============================= */
+/* Contenedor principal (hero)   */
+/* ============================= */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;           /* espacio entre h1 y h2 */
+  text-align: center;
+}
+
+/* ----------------------------- */
+/* Título principal              */
+/* ----------------------------- */
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* ----------------------------- */
+/* Subtítulo                     */
+/* ----------------------------- */
+.hero h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+  margin: 0;
+  margin-bottom: 2.5rem;   /* separa más del countdown */
+}
+
+/* ============================= */
+/* Estilos para el countdown     */
+/* ============================= */
+#countdown {
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.item span {
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.item .label {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
+}
