@@ -37,28 +37,31 @@
 
     <!-- Formulario Netlify -->
     <div class="subscribe">
-      <form
-        id="subscribe-form"
-        name="subscribe"
-        method="POST"
-        netlify
-        netlify-honeypot="bot-field"
-      >
-        <!-- Anti-spam honeypot -->
-        <input type="hidden" name="bot-field" />
-        <!-- Necesario para que Netlify identifique el form -->
-        <input type="hidden" name="form-name" value="subscribe" />
+  <form
+    name="subscribe"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+  >
+    <!-- Honeypot anti-spam -->
+    <p hidden>
+      <label>Si ves esto, no eres humano: <input name="bot-field"></label>
+    </p>
 
-        <input
-          type="email"
-          name="email"
-          id="email-input"
-          placeholder="Ingresa tu e-mail"
-          required
-        />
-        <button type="submit">Suscribirme</button>
-      </form>
-      <div id="subscribe-message"></div>
+    <!-- Form-name necesario -->
+    <input type="hidden" name="form-name" value="subscribe">
+
+    <!-- Campo de e-mail -->
+    <input
+      type="email"
+      name="email"
+      placeholder="Ingresa tu e-mail"
+      required
+    />
+    <button type="submit">Suscribirme</button>
+  </form>
+  <div id="subscribe-message"></div>
+</div>
     </div>
   </div>
 

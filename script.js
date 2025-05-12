@@ -33,8 +33,6 @@ const form     = document.getElementById('subscribe-form');
 const emailIn  = document.getElementById('email-input');
 const msgEl    = document.getElementById('subscribe-message');
 
-form.addEventListener('submit', e => {
-  e.preventDefault();
 
   // Validación básica de e-mail
   const email = emailIn.value.trim();
