@@ -11,29 +11,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="hero">
+  <div class="hero">
     <h1>ELDEN RING: NIGHTREIGN</h1>
     <h2>FALTA POQUITOOOOO!!</h2>
-  <div id="countdown">
-    <div class="item">
-      <span id="days">00</span>
-      <div class="label">DÍAS</div>
+
+    <!-- Countdown -->
+    <div id="countdown">
+      <div class="item">
+        <span id="days">00</span>
+        <div class="label">DÍAS</div>
+      </div>
+      <div class="item">
+        <span id="hours">00</span>
+        <div class="label">HORAS</div>
+      </div>
+      <div class="item">
+        <span id="mins">00</span>
+        <div class="label">MINS</div>
+      </div>
+      <div class="item">
+        <span id="secs">00</span>
+        <div class="label">SEGS</div>
+      </div>
     </div>
-    <div class="item">
-      <span id="hours">00</span>
-      <div class="label">HORAS</div>
-    </div>
-    <div class="item">
-      <span id="mins">00</span>
-      <div class="label">MINS</div>
-    </div>
-    <div class="item">
-      <span id="secs">00</span>
-      <div class="label">SEGS</div>
+
+    <!-- Formulario Netlify -->
+    <div class="subscribe">
+      <form
+        id="subscribe-form"
+        name="subscribe"
+        method="POST"
+        netlify
+        netlify-honeypot="bot-field"
+      >
+        <!-- Anti-spam honeypot -->
+        <input type="hidden" name="bot-field" />
+        <!-- Necesario para que Netlify identifique el form -->
+        <input type="hidden" name="form-name" value="subscribe" />
+
+        <input
+          type="email"
+          name="email"
+          id="email-input"
+          placeholder="Ingresa tu e-mail"
+          required
+        />
+        <button type="submit">Suscribirme</button>
+      </form>
+      <div id="subscribe-message"></div>
     </div>
   </div>
 
-  <!-- enlaza tu JS (defer para esperar al DOM) -->
   <script src="script.js" defer></script>
 </body>
 </html>
