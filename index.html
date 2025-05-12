@@ -37,12 +37,13 @@
 
     <!-- Formulario Netlify -->
     <div class="subscribe">
-  <form
-    name="subscribe"
-    method="POST"
-    data-netlify="true"
-    netlify-honeypot="bot-field"
-  >
+   <form
++    id="subscribe-form"
++    name="subscribe"
++    method="POST"
++    data-netlify="true"
++    netlify-honeypot="bot-field"
++  >
     <!-- Honeypot anti-spam -->
     <p hidden>
       <label>Si ves esto, no eres humano: <input name="bot-field"></label>
@@ -52,12 +53,13 @@
     <input type="hidden" name="form-name" value="subscribe">
 
     <!-- Campo de e-mail -->
-    <input
-      type="email"
-      name="email"
-      placeholder="Ingresa tu e-mail"
-      required
-    />
+     <input
++      id="email-input"
++      type="email"
++      name="email"
++      placeholder="Ingresa tu e-mail"
++      required
++    />
     <button type="submit">Suscribirme</button>
   </form>
   <div id="subscribe-message"></div>
