@@ -1,7 +1,7 @@
 // === script.js ===
 
 // 1. Countdown
-const targetDate = new Date('2025-05-30T00:00:00');
+const targetDate = new Date('2025-05-29T19:00:00');
 const daysEl   = document.getElementById('days');
 const hoursEl  = document.getElementById('hours');
 const minsEl   = document.getElementById('mins');
